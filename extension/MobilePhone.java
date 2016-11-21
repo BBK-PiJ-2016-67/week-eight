@@ -35,7 +35,7 @@ public class MobilePhone extends OldPhone {
 	 *
 	 * @param level the level to start at
 	 */
-	public void playGame(String level) {
+	protected void playGame(String level) {
 		System.out.println("Playing game at level " + level);
 		return;
 	}

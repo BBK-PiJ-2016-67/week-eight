@@ -17,7 +17,7 @@ public class SmartPhone extends MobilePhone {
 			return;
 		}
 		
-		System.out.println("Calling " + number + "through the internet to save money");
+		System.out.println("Calling " + number + " through the internet to save money");
 		this.saveNumber(number);
 	}
 	/**
@@ -34,5 +34,13 @@ public class SmartPhone extends MobilePhone {
 	 */
 	public Point findPosition() {
 		return new Point(10, 20);
+	}
+	/**
+	 * Play a game
+	 *
+	 * @param level the level to start at
+	 */	
+	public void playGame(String level) {		
+		super.playGame(level);
 	}
 }
