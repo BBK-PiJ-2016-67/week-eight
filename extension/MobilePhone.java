@@ -14,6 +14,14 @@ public class MobilePhone extends OldPhone {
 	@Override
 	public void call(String number) {
 		super.call(number);
+		this.saveNumber(number);
+	}
+	/**
+	 * Save a number to call history
+	 *
+	 * @param number the number to be saved
+	 */
+	public void saveNumber(String number) {
 		String[] newArr = new String[calledNumbers.length + 1];
 		for (int i = 0; i < calledNumbers.length; i++) {
 			newArr[i] = calledNumbers[i];

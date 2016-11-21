@@ -3,6 +3,21 @@
  */
 public class SmartPhone extends MobilePhone {
 	/**
+	 * Call a number and add it to a list of called numbers
+	 *
+	 * @param number the number to be called
+	 */
+	@Override
+	public void call(String number) {
+		if (!number.startsWith("00")) {
+			super.call(number);
+			return;
+		}
+		
+		System.out.println("Calling " + number + "through the internet to save money");
+		this.saveNumber(number);
+	}
+	/**
 	 * Browse the web
 	 *
 	 * @param url a url to browse

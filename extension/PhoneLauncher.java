@@ -10,6 +10,8 @@ public class PhoneLauncher {
 			iPhone.call("0800" + String.valueOf(i));
 		}
 		
+		iPhone.call("00302332");
+		
 		iPhone.printLastNumbers();
 		
 		iPhone.ringAlarm("10:00AM");
