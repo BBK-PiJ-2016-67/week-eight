@@ -2,6 +2,16 @@
 * An old phone that can only make calls
 */
 public class OldPhone implements Phone {
+	private String brand = null;
+	public OldPhone(String brand) {
+		this.brand = brand;
+	}
+	/**
+	 * Returns the phone's brand
+	 */
+	public String getBrand() {
+		return brand;
+	}
 	/**
 	 * Call a number
 	 *

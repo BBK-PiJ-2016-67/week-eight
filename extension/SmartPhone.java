@@ -2,6 +2,9 @@
  * A smart phone that can do a whole bunch of stuff
  */
 public class SmartPhone extends MobilePhone {
+	public SmartPhone(String brand) {
+		super(brand);
+	}
 	/**
 	 * Call a number and add it to a list of called numbers
 	 *

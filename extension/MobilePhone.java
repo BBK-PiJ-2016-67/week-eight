@@ -3,7 +3,8 @@
  */
 public class MobilePhone extends OldPhone {
 	private String[] calledNumbers;
-	public MobilePhone() {
+	public MobilePhone(String brand) {
+		super(brand);
 		calledNumbers = new String[0];
 	}
 	/**
