@@ -7,7 +7,7 @@ public class PhoneLauncher {
 		SmartPhone iPhone = new SmartPhone("iPhone 6S");
 		
 		for (int i = 0; i < 11; i++) {
-			iPhone.call("0800" + String.valueOf(i));
+			iPhone.call("0800" + i);
 		}
 		
 		iPhone.call("00302332");
@@ -21,6 +21,6 @@ public class PhoneLauncher {
 		System.out.println("The brand of my phone is " + iPhone.getBrand());
 		
 		Point location = iPhone.findPosition();
-		System.out.println("I am at x:" + String.valueOf(location.getX()) + " y:" + String.valueOf(location.getY()));
+		System.out.println("I am at " + location.toString());
 	}
 }
