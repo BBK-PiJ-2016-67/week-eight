@@ -16,7 +16,6 @@ public class SmartPhone extends MobilePhone {
 			super.call(number);
 			return;
 		}
-		
 		System.out.println("Calling " + number + " through the internet to save money");
 		this.saveNumber(number);
 	}
